@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockDeck</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>StockDeck</h1>
+    </header>
+
+    <main>
+        <h2>Inventario</h2>
+
+    <form id="item-form">
+        <input type="text" id="nombre-articulo" name="nombre" placeholder="Nombre del artículo" required>
+        <input type="text" id="categoria-articulo" name="categoria" placeholder="Categoría del artículo" required>
+        <input type="number" id="precio-articulo" name="precio" placeholder="Precio del artículo" required>
+        <input type="number" id="cantidad-articulo" name="cantidad" placeholder="Cantidad del artículo" required>
+        <button type="submit">Guardar</button>
+    </form>
+    
+    <table id="inventario">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Categoría</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+            </tr>
+        </thead>
+        <tbody id="inventario-body">
+            
+        </tbody>
+
+    </table>
+
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
